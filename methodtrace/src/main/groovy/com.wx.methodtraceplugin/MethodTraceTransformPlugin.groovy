@@ -19,6 +19,13 @@ class MethodTraceTransformPlugin extends Transform implements Plugin<Project> {
 
     void apply(Project project) {
         this.project = project
+        //扩展，在app下build.gradle内可定义属性
+        //methodTrace {
+        //    是否开启
+        //    open = true
+        //    插桩配置文件
+        //    traceConfigFile = "${project.projectDir}/traceconfig.txt"
+        //}
         project.extensions.create("methodTrace", MethodTraceConfig)
         project.android.registerTransform(this)
     }

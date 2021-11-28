@@ -1,6 +1,7 @@
 apply plugin: 'groovy'
 apply plugin: 'maven'
 apply plugin: 'kotlin'
+apply plugin: 'maven-publish'
 apply plugin: "com.gradle.plugin-publish"
 repositories {
     jcenter()
@@ -26,22 +27,21 @@ buildscript {
         }
     }
     dependencies {
-        classpath "com.gradle.publish:plugin-publish-plugin:0.9.7"
+        classpath "com.gradle.publish:plugin-publish-plugin:0.18.0"
     }
 }
 
 version = "1.0.0"    //配置插件的版本号
-group = "com.wx.methodtraceplugin"   //插件的群组，插件的classpath会用到
+group = "com.wx.methodtrace"   //插件的群组，插件的classpath会用到
 
 pluginBundle {
     website = 'https://github.com/yangwenxin/MethodTrace'
     vcsUrl = 'https://github.com/yangwenxin/MethodTrace.git'
     description = 'method time consuming trace(方法耗时插桩)'  //插件描述
     tags = ['方法耗时', 'method', 'trace', 'asm', 'Android']  //插件的tag。可以通过这个在插件门户上搜索
-
     plugins {
         greetingsPlugin {
-            id = 'method.time.trace'   //插件的id，到时候apply的插件id
+            id = 'method.time.trace'
             displayName = 'MethodTracePlugin'
         }
     }
