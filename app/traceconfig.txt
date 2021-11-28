@@ -1,0 +1,5 @@
+#配置需插桩的包,如果为空，则默认所有文件都进行插桩
+-tracepackage com/wx/methodtracedemo
+
+#插桩代码所在类 (默认com/wx/methodtrace/MethodComputer)
+-beatclass com/wx/methodtracedemo/MethodComputer

@@ -1,0 +1,3 @@
+rootProject.name = "MethodTrace"
+include ':app'
+include ':methodtrace'
