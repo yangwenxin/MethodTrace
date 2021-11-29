@@ -38,7 +38,7 @@ Gradle plugin + Transform + Ams 字节码插桩实现快速排查高耗时方法
 
 + gradle相关 
 1. [Gradle Extension详解](https://www.jianshu.com/p/58d86b4c0ee5)
-2. [字节连载 | 深入理解Gradle框架](https://note.youdao.com/)
+2. [字节连载 | 深入理解Gradle框架](https://mp.weixin.qq.com/s/mDCTtQZb6mhWOFAvLYKBSg)
 
 ### 插桩实践
 
