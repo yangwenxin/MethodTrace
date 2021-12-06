@@ -31,17 +31,22 @@ buildscript {
     }
 }
 
-version = "1.0.0"    //配置插件的版本号
-group = "com.wx.methodtrace"   //插件的群组，插件的classpath会用到
+version = '1.0.0'    //配置插件的版本号
+group = 'com.wx.methodtrace'
 
 pluginBundle {
     website = 'https://github.com/yangwenxin/MethodTrace'
     vcsUrl = 'https://github.com/yangwenxin/MethodTrace.git'
     description = 'method time consuming trace(方法耗时插桩)'  //插件描述
     tags = ['方法耗时', 'method', 'trace', 'asm', 'Android']  //插件的tag。可以通过这个在插件门户上搜索
+    mavenCoordinates {
+        groupId = "com.wx.methodtrace"
+        artifactId = "method-trace"
+        version = "1.0.0"
+    }
     plugins {
         greetingsPlugin {
-            id = 'method.time.trace'
+            id = 'com.wx.methodtrace.wxplugin'
             displayName = 'MethodTracePlugin'
         }
     }

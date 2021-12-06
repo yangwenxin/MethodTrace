@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 
-apply plugin: 'method.time.trace'
+apply plugin: 'com.wx.methodtrace.wxplugin'
 
 android {
     compileSdkVersion 29

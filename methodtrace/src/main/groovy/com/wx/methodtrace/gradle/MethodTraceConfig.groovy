@@ -1,4 +1,4 @@
-package com.wx.methodtraceplugin
+package com.wx.methodtrace.gradle
 
 /**
  * 自定义的配置项extension

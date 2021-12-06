@@ -1,4 +1,4 @@
-package com.wx.methodtraceplugin
+package com.wx.methodtrace.gradle
 
 import com.android.build.api.transform.*
 import com.android.build.gradle.internal.pipeline.TransformManager
